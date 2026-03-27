@@ -2,8 +2,8 @@ body {
     margin: 0;
 }
 
-
-#wrapper {
+@media screen and (min-width: 1000px){
+    #wrapper1 {
     display: grid;
     grid-template-areas: 
     'nv'
@@ -17,9 +17,32 @@ body {
     background-color: rgb(0, 0, 0);
     margin: auto;
     padding: 0;
+}  
 }
 
+@media screen and (max-width: 1000px){
+    #wrapper1 {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'hd'
+    'mn'
+    ;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(200, 186, 186);
+    margin: auto;
+    padding: 0;
+}  
+}
+
+
+
+
 nav {
+    height: 100px;
     grid-area: nv;
     display: flex;
     align-items: center;
@@ -106,7 +129,7 @@ main {
     top: -140px;
     width: 50%;
     left:25%;
-    right: 0
+    right: 0;
 }
 
 .background-text1 {
