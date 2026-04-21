@@ -49,8 +49,6 @@ header h1 {
     letter-spacing: 6px;
     line-height: 0.3;
     color: white;
-
- 
 }
 
 
@@ -61,6 +59,7 @@ main {
     position: relative;
     
 }
+
 
 .sec-main{
     position: relative;
@@ -273,12 +272,19 @@ main {
 
 
 .header2{
-    grid-area: hd   ;
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     background-color: rgb(255, 255, 255);
-    
-
+    background-image: url("/img/Untitled design.png");
+    background-size: 100%;
+    height: 400px;
+    background-position: center;
 }
+
+
 
 .meny-overall {
     grid-area: mn;
@@ -286,5 +292,8 @@ main {
 }
 
 .header2 h1{
-    color: rgb(228, 75, 15);
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 5px 3px black ;
+    font-size: 130px;
 }
+
