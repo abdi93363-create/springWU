@@ -375,3 +375,62 @@ main {
     gap: 60px;
     padding: 50px;
 }
+
+.img {
+    width: auto;
+    height: 480px;
+    border-radius: 20px;
+    cursor: zoom-in;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 111, 0, 0.4);
+}
+
+.info-text {
+    color: white;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+    color: rgb(255, 111, 0);
+}
