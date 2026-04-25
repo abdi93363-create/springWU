@@ -31,10 +31,12 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
+.nav-links a:hover {
+    color: rgb(255, 111, 0);
+}
 
 @media screen and (max-width: 999px) {
-    
+
     .logo {
         height: 30px;
         width: auto;
