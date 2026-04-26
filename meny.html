@@ -20,6 +20,11 @@
 <div id="wrapper2">
 <nav>
       <img src="img/logo.png" class="logo" alt="logo">
+       <button class="hamburger" aria-label="Meny">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
       <div class="nav-links">
         <a href="index.html">HEM </a>
         <a href="meny.html">MENY</a>
@@ -75,46 +80,8 @@
         <p>&copy; 2025 Juventus Pizzeria. Alla rättigheter förbehållna.</p>
     </div>
 </footer>
-<script>
-    var lightbox    = document.getElementById('lightbox');
-    var lightboxImg = document.getElementById('lightboxImg');
-    var closeBtn    = document.getElementById('lightboxClose');
-    var zoomables   = document.querySelectorAll('.zoomable');
-
-    function openLightbox(src, alt) {
-      lightboxImg.src = src;
-      lightboxImg.alt = alt;
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      document.body.style.overflow = '';
-    }                                                              /* tog hjälp av https://www.w3schools.com/howto/howto_js_lightbox.asp */
-
-    zoomables.forEach(function(img) {
-      img.addEventListener('click', function() {
-        openLightbox(img.src, img.alt);
-      });
-      img.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openLightbox(img.src, img.alt);
-        }
-      });
-    });
-
-    closeBtn.addEventListener('click', closeLightbox);
-
-    lightbox.addEventListener('click', function(e) {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeLightbox();
-    });
-  </script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/lightbox.js"></script>
 
 </html> 
 </body>
