@@ -57,5 +57,147 @@
     padding: 12px 14px;
     box-sizing: border-box;
     outline: none;
+    transition: border 0.2s, background-color 0.2s;
     
 }
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.skicka-btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background-color 0.2s;
+}
+
+.skicka-btn:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.bekräftelse {
+    display: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 14px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.kontakt-info {
+    flex: 1;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.kontakt-info h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: white;
+    margin: 0 0 12px;
+}
+
+.kontakt-intro {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0 0 40px;
+}
+
+.info-rader {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-rad {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.info-rad:hover {
+    border-color: rgb(255, 83, 4);
+    background-color: rgba(255, 83, 4, 0.07);
+}
+
+
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.info-värde {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 999px) {
+     #wrapper2 {
+        background-color: rgb(255, 83, 4);
+    }
+    .kontakt-main {
+        flex-direction: column;
+    }
+
+    .kontakt-formulär {
+        padding: 40px 20px;
+    }
+
+    .kontakt-info {
+        padding: 40px 20px;
+    }
+
+    .kontakt-info h1 {
+        font-size: 2rem;
+    }
+
+    .kontakt-intro {
+        margin-bottom: 24px;
+    }
+}
+
