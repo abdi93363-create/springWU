@@ -163,9 +163,22 @@ main {
         border-radius: 10px;
     }
 
-    .info-section p { color: white; }
-    .info-section a { color: black; }
-    .info-section h2 { color: bisque; }
+    .info-section p { 
+        
+        color: white; 
+        text-shadow: 2px 2px 1px black;
+    
+    
+    }
+    .info-section a { 
+        color: black; 
+    
+    }
+    .info-section h2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 1px black;
+    
+    }
 
     .order-btn {
         display: none;

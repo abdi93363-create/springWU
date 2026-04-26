@@ -21,8 +21,8 @@
     justify-content: center;
     margin: 0;
     background-color: rgb(255, 255, 255);
-    background-image: url("/img/Untitled design.png");
-    background-size: 100%;
+    background-image: url("/img/nybackground.jpg");
+    background-size: cover;
     height: 400px;
     background-position: center;
 }
@@ -52,7 +52,7 @@
 
 .img:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 30px rgba(255, 111, 0, 0.4);
+    box-shadow: 0 8px 30px rgb(255, 111, 0);
 }
 
 .info-text {
@@ -127,4 +127,6 @@
         padding: 0 16px;
         font-size: 0.9rem;
     }
+
+
 }

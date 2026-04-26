@@ -30,7 +30,7 @@
 
     <main class="kontakt-main">
 
-      <div class="kontakt-formulär">
+      <section class="kontakt-formulär">
         <div class="formulär-inner">
           <div class="input-group">
             <label for="namn">Namn</label>
@@ -56,9 +56,9 @@
           <p class="bekräftelse" id="bekräftelse">Tack! Vi återkommer så snart vi kan.</p>
 
         </div>
-      </div>
+    </section>
 
-      <div class="kontakt-info">
+      <section class="kontakt-info">
         <h1>Kontakta oss idag</h1>
         <p class="kontakt-intro">Varmt välkomna in, vi har öppet 11:00–21:00 varje dag</p>
 
@@ -84,18 +84,18 @@
             </div>
           </a>
         </div>
-      </div>
+      </section>
 
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-desc">
-          <h3>Juventus Pizzeria</h3>
+          <h2>Juventus Pizzeria</h2>
           <p>Din destination för en smakresa genom årtionden av tradition och innovation. Sedan 1980-talet har vi varit en ikonisk del av Angered-området och Göteborgs matkultur.</p>
         </div>
         <div class="footer-col">
-          <h3>Navigering</h3>
+          <h2>Navigering</h2>
           <ul>
             <li><a href="index.html">Hem</a></li>
             <li><a href="meny.html">Meny</a></li>
@@ -104,12 +104,12 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h3>Öppettider</h3>
+          <h2>Öppettider</h2>
           <p>Alla dagar</p>
           <p>11:00 – 21:00</p>
         </div>
         <div class="footer-col">
-          <h3>Kontakt</h3>
+          <h2>Kontakt</h2>
           <p>mohammed_simmo@hotmail.com</p>
           <p>031-330 40 43</p>
         </div>
@@ -118,6 +118,14 @@
         <p>&copy; 2025 Juventus Pizzeria. Alla rättigheter förbehållna.</p>
       </div>
     </footer>
+
+    <script>
+    function skicka() {
+      var b = document.getElementById('bekräftelse');
+      b.style.display = 'block';
+      setTimeout(function() { b.style.display = 'none'; }, 4000);
+    }
+     </script>
 
   </div>
   <script src="js/hamburger.js"></script>
