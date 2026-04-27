@@ -1,4 +1,4 @@
-  var lightbox    = document.getElementById('lightbox');
+    var lightbox    = document.getElementById('lightbox');
     var lightboxImg = document.getElementById('lightboxImg');
     var closeBtn    = document.getElementById('lightboxClose');
     var zoomables   = document.querySelectorAll('.zoomable');
